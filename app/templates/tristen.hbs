@@ -1,1 +1,19 @@
+<h3><u>Tristen's Test Page</u></h3>
+
+<p><strong>Tristen's traits:</strong></p>
+
+<div>
+ <label>Trait:</label>
+ {{input type="text" value=newtrait placeholder="Enter a trait for Tristen"}}
+</div>
+
+<ul>
+  {{#each model as |trait|}}
+    <li>{{trait}}</li>
+  {{/each}}
+  {{#if newtrait}}
+    <li>{{newtrait}}</li>
+  {{/if}}
+</ul>
+
 {{outlet}}
